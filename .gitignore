@@ -28,6 +28,12 @@ htmlcov/
 venv/
 ENV/
 
+# SQLite
+*.db
+*.db-wal
+*.db-shm
+*.sqlite3
+
 # Node / React
 node_modules/
 npm-debug.log*
