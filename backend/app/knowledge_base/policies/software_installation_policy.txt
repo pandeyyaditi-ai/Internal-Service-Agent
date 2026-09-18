@@ -1,0 +1,62 @@
+SOFTWARE INSTALLATION AND LICENSING POLICY
+Document ID: POL-SW-001
+Version: 2.1
+Effective Date: February 1, 2024
+Review Date: February 1, 2025
+
+1. PURPOSE
+This policy establishes guidelines for the installation, use, and management of software on company devices.
+
+2. SCOPE
+All employees, contractors, and users of company-owned or managed devices.
+
+3. APPROVED SOFTWARE
+3.1 Pre-approved software is available in Software Center (self-service installation)
+3.2 Pre-approved categories:
+    - Productivity: Microsoft 365, Adobe Acrobat Reader, Slack, Zoom
+    - Development: VS Code, Git, Node.js, Python, Docker Desktop, Postman
+    - Design: Figma (web), Adobe Creative Cloud (with license)
+    - Utilities: 7-Zip, Notepad++, WinSCP, PuTTY, Firefox, Chrome
+    - Security: CrowdStrike, BitLocker, Microsoft Authenticator
+
+4. SOFTWARE REQUESTS
+4.1 Non-approved software requires a formal request
+4.2 Submit at: https://itportal.company.com/software-request
+4.3 Required information: Software name, version, vendor, business justification
+4.4 Manager approval required
+4.5 IT Security review: 3-5 business days
+4.6 Approval criteria: Security assessment, license compliance, compatibility
+
+5. PROHIBITED SOFTWARE
+5.1 Peer-to-peer file sharing applications
+5.2 Unauthorized remote access tools
+5.3 Personal VPN or proxy applications
+5.4 Cryptocurrency mining software
+5.5 Unlicensed or pirated software
+5.6 Software that bypasses security controls
+
+6. LICENSING
+6.1 All software must be properly licensed
+6.2 IT manages enterprise license agreements
+6.3 Do not use personal licenses for work purposes
+6.4 Do not share license keys or credentials
+6.5 Report unused software to IT for license reclamation
+
+7. INSTALLATION GUIDELINES
+7.1 Install only from approved sources (Software Center, vendor websites)
+7.2 Do not disable security software during installation
+7.3 Keep all software updated to the latest stable version
+7.4 Enable automatic updates where possible
+7.5 Uninstall software that is no longer needed
+
+8. OPEN SOURCE SOFTWARE
+8.1 Open source software requires IT Security review before use
+8.2 Check license compatibility with company policies
+8.3 Maintain a record of open source components used in projects
+
+9. VIOLATIONS
+Installation of unauthorized software may result in:
+- Software removal
+- Loss of administrator privileges
+- Disciplinary action
+- In severe cases, termination

@@ -1,0 +1,65 @@
+CORPORATE LAPTOP AND HARDWARE POLICY
+Document ID: POL-HW-001
+Version: 2.0
+Effective Date: January 1, 2024
+Review Date: January 1, 2025
+
+1. PURPOSE
+This policy governs the issuance, use, maintenance, and return of company-provided laptops and hardware equipment.
+
+2. SCOPE
+All employees and contractors who are issued company hardware.
+
+3. HARDWARE STANDARDS
+3.1 Developer Configuration:
+    - MacBook Pro 14" M3 Pro or Dell XPS 15
+    - 16GB RAM minimum (32GB available upon request)
+    - 512GB SSD
+    - External monitor: Dell U2723QE 27" 4K
+
+3.2 Business Configuration:
+    - Dell Latitude 14" or HP EliteBook
+    - 16GB RAM
+    - 256GB SSD
+    - External monitor: Dell P2422H 24" FHD
+
+3.3 Standard Accessories:
+    - Wireless keyboard and mouse
+    - USB-C docking station
+    - Headset (for remote workers)
+
+4. HARDWARE REFRESH CYCLE
+4.1 Laptops are refreshed every 3 years
+4.2 Monitors and accessories: every 5 years
+4.3 Eligible employees will be notified by IT
+
+5. REQUESTING HARDWARE
+5.1 Standard requests: https://itportal.company.com/hardware-request
+5.2 Manager approval required
+5.3 Timeline: 5-10 business days for standard equipment
+5.4 Emergency replacements: same-day loaner available from IT Help Desk
+
+6. EMPLOYEE RESPONSIBILITIES
+6.1 Treat company hardware with reasonable care
+6.2 Do not install unauthorized software
+6.3 Enable full disk encryption (BitLocker/FileVault)
+6.4 Keep operating system and software updated
+6.5 Report loss, theft, or damage immediately to IT Security
+6.6 Do not modify hardware (RAM upgrades, etc.) without IT approval
+
+7. RETURN POLICY
+7.1 All hardware must be returned upon separation from the company
+7.2 Hardware must be returned to IT Help Desk on or before the last working day
+7.3 Data will be securely wiped before reuse or disposal
+7.4 Failure to return hardware may result in payroll deduction
+
+8. LOSS AND THEFT
+8.1 Report immediately to IT Security (security@company.com)
+8.2 IT will remotely lock and wipe the device
+8.3 File a police report for theft
+8.4 Replacement device issued within 1-2 business days
+
+9. PERSONAL USE
+9.1 Limited personal use is permitted
+9.2 Company reserves the right to monitor all activity on company devices
+9.3 No expectation of privacy on company hardware

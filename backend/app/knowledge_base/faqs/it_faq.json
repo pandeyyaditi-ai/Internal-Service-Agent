@@ -1,0 +1,265 @@
+{
+  "version": "1.0",
+  "last_updated": "2024-12-01",
+  "categories": {
+    "password": {
+      "display_name": "Password & Account Access",
+      "icon": "🔐"
+    },
+    "vpn": {
+      "display_name": "VPN & Remote Access",
+      "icon": "🌐"
+    },
+    "email": {
+      "display_name": "Email & Communication",
+      "icon": "📧"
+    },
+    "software": {
+      "display_name": "Software & Applications",
+      "icon": "💻"
+    },
+    "hardware": {
+      "display_name": "Hardware & Devices",
+      "icon": "🖥️"
+    },
+    "network": {
+      "display_name": "Network & Connectivity",
+      "icon": "📡"
+    },
+    "security": {
+      "display_name": "Security & Compliance",
+      "icon": "🛡️"
+    },
+    "general": {
+      "display_name": "General IT Support",
+      "icon": "❓"
+    }
+  },
+  "faqs": [
+    {
+      "id": "FAQ-001",
+      "category": "password",
+      "question": "How do I reset my password?",
+      "answer": "You can reset your password in several ways:\n\n1. **Self-Service Portal**: Go to https://passwordreset.company.com, enter your employee ID, and follow the verification steps.\n2. **Microsoft 365**: If you can access Outlook, go to Settings > Password > Change Password.\n3. **IT Support**: If locked out completely, contact IT support via chat or call ext. 5555.\n\nPassword requirements: minimum 12 characters, at least one uppercase, one lowercase, one number, and one special character. Passwords expire every 90 days.",
+      "keywords": ["password", "reset", "forgot", "locked out", "change password", "expired", "login"],
+      "related_policy": "password_policy",
+      "priority": "high"
+    },
+    {
+      "id": "FAQ-002",
+      "category": "password",
+      "question": "My account is locked. What should I do?",
+      "answer": "Account lockouts typically occur after 5 failed login attempts. Here's what to do:\n\n1. **Wait 30 minutes**: Accounts automatically unlock after 30 minutes.\n2. **Self-Service Unlock**: Visit https://passwordreset.company.com and select 'Unlock Account'.\n3. **Contact IT**: If you need immediate access, contact IT support — we can manually unlock your account.\n\n**Common causes**: Cached credentials on mobile devices, saved passwords in browsers, VPN clients using old passwords.",
+      "keywords": ["locked", "account locked", "lockout", "cant login", "blocked", "disabled"],
+      "related_policy": "password_policy",
+      "priority": "high"
+    },
+    {
+      "id": "FAQ-003",
+      "category": "vpn",
+      "question": "How do I set up VPN on my computer?",
+      "answer": "To set up the corporate VPN:\n\n1. **Download**: Get the GlobalProtect VPN client from https://vpn.company.com.\n2. **Install**: Run the installer with admin privileges.\n3. **Configure**: Open GlobalProtect, enter portal address: `vpn.company.com`\n4. **Login**: Use your corporate credentials (same as email login).\n5. **Connect**: Click 'Connect' — you should see a green shield icon when connected.\n\n**Supported OS**: Windows 10+, macOS 12+, Ubuntu 20.04+\n**Required**: Active employee account and completed security training.",
+      "keywords": ["vpn", "setup", "install", "configure", "globalprotect", "remote access", "work from home"],
+      "related_policy": "vpn_policy",
+      "priority": "high"
+    },
+    {
+      "id": "FAQ-004",
+      "category": "vpn",
+      "question": "VPN is not connecting. What should I check?",
+      "answer": "If your VPN won't connect, try these steps in order:\n\n1. **Check Internet**: Make sure your regular internet connection is working.\n2. **Restart VPN Client**: Close GlobalProtect completely and reopen it.\n3. **Verify Credentials**: Ensure you're using the correct username and password. Try logging into email first.\n4. **Check Firewall**: Temporarily disable personal firewall/antivirus to test.\n5. **DNS Flush**: Open Command Prompt and run `ipconfig /flushdns`.\n6. **Restart Computer**: A fresh restart often resolves connection issues.\n7. **Try Different Network**: If on public WiFi, try mobile hotspot instead.\n\nIf none of these work, you may need a VPN profile reset — contact IT support.",
+      "keywords": ["vpn not working", "vpn error", "cannot connect", "connection failed", "timeout", "vpn down"],
+      "related_policy": "vpn_policy",
+      "priority": "critical"
+    },
+    {
+      "id": "FAQ-005",
+      "category": "vpn",
+      "question": "What VPN error codes mean and how to fix them?",
+      "answer": "Common VPN error codes:\n\n- **Error 691**: Invalid credentials — reset your password and try again.\n- **Error 800**: VPN server unreachable — check your internet connection and try a different network.\n- **Error 809**: Firewall blocking — ensure ports 443 and 4443 are open.\n- **Error 812**: Authentication policy — your account may need reauthorization. Contact IT.\n- **Error 720**: PPP connection failed — uninstall and reinstall the VPN client.\n- **SSL Error**: Certificate expired — update GlobalProtect to the latest version.\n\nIf the error persists after troubleshooting, create a support ticket with the exact error code and a screenshot.",
+      "keywords": ["vpn error", "error code", "691", "800", "809", "ssl", "certificate"],
+      "related_policy": "vpn_policy",
+      "priority": "high"
+    },
+    {
+      "id": "FAQ-006",
+      "category": "email",
+      "question": "How do I set up email on my phone?",
+      "answer": "To set up corporate email on your mobile device:\n\n**iPhone/iPad:**\n1. Go to Settings > Mail > Accounts > Add Account > Microsoft Exchange.\n2. Enter your corporate email address.\n3. Select 'Sign In' and authenticate with your credentials + MFA.\n\n**Android:**\n1. Open the Outlook app (download from Play Store if needed).\n2. Tap 'Add Account' and enter your corporate email.\n3. Authenticate with your credentials + MFA.\n\n**Important**: Your device must have a passcode/biometric lock enabled. Devices without screen lock will be blocked by security policy.",
+      "keywords": ["email", "phone", "mobile", "outlook", "exchange", "iphone", "android", "setup email"],
+      "related_policy": null,
+      "priority": "medium"
+    },
+    {
+      "id": "FAQ-007",
+      "category": "email",
+      "question": "I'm not receiving emails. What's wrong?",
+      "answer": "If you're not receiving emails:\n\n1. **Check Junk/Spam folder**: Emails may be filtered incorrectly.\n2. **Check Storage**: If your mailbox is full (50GB limit), you won't receive new emails. Archive old emails.\n3. **Check Rules**: Review Outlook rules that might be moving emails automatically.\n4. **Check Focused Inbox**: Toggle between 'Focused' and 'Other' tabs in Outlook.\n5. **Test**: Ask a colleague to send you a test email.\n6. **Sync Issues**: In Outlook desktop, try Send/Receive All Folders (F9).\n7. **Online Check**: Log into https://outlook.office365.com to verify if emails arrive in the web client.\n\nIf the issue persists, your account may have a mail flow rule applied by IT — contact support.",
+      "keywords": ["not receiving email", "email missing", "inbox empty", "no new mail", "email delayed"],
+      "related_policy": null,
+      "priority": "high"
+    },
+    {
+      "id": "FAQ-008",
+      "category": "software",
+      "question": "How do I request new software installation?",
+      "answer": "To request software installation:\n\n1. **Self-Service Software Center**: Open 'Software Center' from Start Menu. Browse available approved software and click 'Install'.\n2. **Not in Software Center?**: Submit a software request through the IT portal at https://itportal.company.com/software-request.\n3. **Required Info**: Software name, version, business justification, and manager approval.\n4. **Timeline**: Pre-approved software: same day. New software: 3-5 business days for security review.\n\n**Note**: Installing unapproved software is against company policy. All software must be vetted by IT Security.",
+      "keywords": ["install software", "new software", "application", "download", "program", "software request"],
+      "related_policy": "software_installation_policy",
+      "priority": "medium"
+    },
+    {
+      "id": "FAQ-009",
+      "category": "software",
+      "question": "What software is pre-approved for installation?",
+      "answer": "The following software is pre-approved and available in Software Center:\n\n**Productivity**: Microsoft 365 (Word, Excel, PowerPoint, Teams), Adobe Acrobat Reader, Slack, Zoom\n**Development**: VS Code, Git, Node.js, Python, Docker Desktop, Postman\n**Design**: Figma (web), Adobe Creative Cloud (with license)\n**Utilities**: 7-Zip, Notepad++, WinSCP, PuTTY, Firefox, Chrome\n**Security**: CrowdStrike, BitLocker, Microsoft Authenticator\n\nFor anything not on this list, submit a software request for IT Security review.",
+      "keywords": ["approved software", "software list", "what can I install", "available software", "software center"],
+      "related_policy": "software_installation_policy",
+      "priority": "low"
+    },
+    {
+      "id": "FAQ-010",
+      "category": "hardware",
+      "question": "How do I request a new laptop or hardware?",
+      "answer": "To request hardware:\n\n1. **Standard Refresh**: Laptops are refreshed every 3 years. You'll receive a notification when eligible.\n2. **New Request**: Submit a hardware request at https://itportal.company.com/hardware-request.\n3. **Required**: Manager approval and business justification.\n4. **Standard Options**:\n   - **Developer**: MacBook Pro 14\" or Dell XPS 15 (16GB RAM, 512GB SSD)\n   - **Business**: Dell Latitude 14\" or HP EliteBook (16GB RAM, 256GB SSD)\n   - **Accessories**: External monitor, keyboard, mouse, headset, docking station\n5. **Timeline**: 5-10 business days for standard equipment.\n\n**Emergency**: If your laptop is broken/stolen, contact IT immediately for a loaner device.",
+      "keywords": ["new laptop", "hardware request", "computer", "equipment", "monitor", "keyboard", "mouse", "broken laptop"],
+      "related_policy": "laptop_policy",
+      "priority": "medium"
+    },
+    {
+      "id": "FAQ-011",
+      "category": "hardware",
+      "question": "My laptop is running slow. What can I do?",
+      "answer": "To improve laptop performance:\n\n1. **Restart**: Restart your laptop (don't just close the lid — do a full restart).\n2. **Updates**: Check for Windows/macOS updates and install them.\n3. **Disk Space**: Ensure at least 20% free disk space. Move files to OneDrive.\n4. **Startup Programs**: Disable unnecessary startup applications (Task Manager > Startup tab).\n5. **Browser Tabs**: Close unused browser tabs — each tab uses memory.\n6. **Antivirus Scan**: Run a full CrowdStrike scan to check for malware.\n7. **Memory Check**: Open Task Manager — if RAM is consistently above 90%, you may need more memory.\n\nIf the laptop is over 3 years old, you're eligible for a hardware refresh. Contact IT to arrange.",
+      "keywords": ["slow laptop", "computer slow", "performance", "lagging", "freezing", "hanging"],
+      "related_policy": "laptop_policy",
+      "priority": "medium"
+    },
+    {
+      "id": "FAQ-012",
+      "category": "network",
+      "question": "How do I connect to the office WiFi?",
+      "answer": "To connect to office WiFi:\n\n**Corporate Network (Recommended)**:\n1. Connect to SSID: `COMPANY-SECURE`\n2. Authentication: WPA2-Enterprise\n3. Username: your email address\n4. Password: your corporate password\n5. Certificate: Accept the security certificate when prompted.\n\n**Guest Network**:\n1. Connect to SSID: `COMPANY-GUEST`\n2. Open a browser — you'll be redirected to a captive portal.\n3. Enter the guest access code (available from reception).\n\n**Note**: The guest network has limited bandwidth and no access to internal resources.",
+      "keywords": ["wifi", "wireless", "connect wifi", "office network", "internet", "ssid"],
+      "related_policy": null,
+      "priority": "medium"
+    },
+    {
+      "id": "FAQ-013",
+      "category": "network",
+      "question": "I can't access an internal website/service.",
+      "answer": "If you can't access an internal service:\n\n1. **VPN Connected?**: Internal services require VPN when working remotely. Check your VPN connection.\n2. **Correct URL?**: Make sure you're using the correct internal URL (not the public version).\n3. **DNS Issues**: Try accessing by IP address instead of hostname. Run `nslookup <hostname>` to check.\n4. **Browser Cache**: Clear your browser cache and cookies, then try again.\n5. **Permissions**: Some internal services require specific access groups. Check with your manager if you should have access.\n6. **Service Status**: Check the IT status page at https://status.company.com for known outages.\n\nIf the service is down for everyone, IT is likely already working on it. Check the status page for updates.",
+      "keywords": ["can't access", "website down", "internal service", "intranet", "connection refused", "404", "access denied"],
+      "related_policy": null,
+      "priority": "high"
+    },
+    {
+      "id": "FAQ-014",
+      "category": "security",
+      "question": "How do I set up multi-factor authentication (MFA)?",
+      "answer": "To set up MFA:\n\n1. Go to https://aka.ms/mfasetup\n2. Sign in with your corporate credentials.\n3. Choose your preferred method:\n   - **Microsoft Authenticator app** (recommended): Scan the QR code with the app.\n   - **Phone call**: Enter your phone number to receive verification calls.\n   - **SMS**: Enter your phone number for text code verification.\n4. Complete the verification test.\n\n**Tips**:\n- Set up at least 2 methods in case one is unavailable.\n- The Authenticator app works offline and is most secure.\n- If you get a new phone, set up MFA on the new device BEFORE wiping the old one.",
+      "keywords": ["mfa", "multi-factor", "two-factor", "2fa", "authenticator", "verification", "security code"],
+      "related_policy": null,
+      "priority": "high"
+    },
+    {
+      "id": "FAQ-015",
+      "category": "security",
+      "question": "I received a suspicious email. What should I do?",
+      "answer": "If you receive a suspicious email:\n\n1. **DO NOT click** any links or open attachments.\n2. **DO NOT reply** to the email.\n3. **Report it**: In Outlook, click the 'Report Phishing' button in the ribbon, or forward the email to security@company.com.\n4. **Delete**: After reporting, delete the email from your inbox.\n\n**Signs of phishing**:\n- Urgent/threatening language\n- Requests for credentials or personal info\n- Suspicious sender address (look carefully at the domain)\n- Generic greeting ('Dear User' instead of your name)\n- Unexpected attachments\n- Links that don't match the displayed text (hover to check)\n\n**Already clicked?**: Change your password immediately and contact IT Security.",
+      "keywords": ["phishing", "suspicious email", "spam", "scam", "malware", "virus", "hacked"],
+      "related_policy": null,
+      "priority": "critical"
+    },
+    {
+      "id": "FAQ-016",
+      "category": "general",
+      "question": "How do I contact IT support?",
+      "answer": "You can reach IT support through multiple channels:\n\n1. **AI Chat Support**: Use this chat interface for immediate help with common issues.\n2. **IT Portal**: Submit a ticket at https://itportal.company.com\n3. **Phone**: Call ext. 5555 (internal) or +1-555-IT-HELP (external)\n4. **Email**: support@company.com\n5. **Walk-in**: IT Help Desk, Building A, Floor 2 (Mon-Fri, 8AM-6PM)\n\n**Escalation**: If your issue is urgent and not resolved within the SLA, contact the IT Manager directly.",
+      "keywords": ["contact", "help", "support", "phone number", "it desk", "helpdesk"],
+      "related_policy": null,
+      "priority": "low"
+    },
+    {
+      "id": "FAQ-017",
+      "category": "general",
+      "question": "What are the IT support hours and SLA?",
+      "answer": "**IT Support Hours**:\n- **Chat/AI Support**: 24/7 availability\n- **Phone Support**: Mon-Fri, 7AM-7PM (local time)\n- **Walk-in Desk**: Mon-Fri, 8AM-6PM\n- **Emergency On-Call**: 24/7 for critical issues\n\n**Service Level Agreements (SLA)**:\n- **Critical** (system down, security breach): 1 hour response, 4 hour resolution\n- **High** (major feature impacted): 4 hour response, 1 business day resolution\n- **Medium** (minor impact): 8 hour response, 3 business day resolution\n- **Low** (question, enhancement): 1 business day response, 5 business day resolution\n\n**Escalation Path**: IT Support → Team Lead → IT Manager → CTO",
+      "keywords": ["hours", "sla", "response time", "when open", "support hours", "escalation"],
+      "related_policy": null,
+      "priority": "low"
+    },
+    {
+      "id": "FAQ-018",
+      "category": "software",
+      "question": "How do I access Microsoft Teams and set it up?",
+      "answer": "Microsoft Teams setup:\n\n1. **Desktop App**: Available in Software Center, or download from https://teams.microsoft.com/download\n2. **Web Version**: Go to https://teams.microsoft.com in your browser.\n3. **Sign In**: Use your corporate email and password + MFA.\n4. **Mobile**: Download Microsoft Teams from App Store/Play Store.\n\n**Tips**:\n- Set your status (Available, Busy, Away) to let colleagues know your availability.\n- Use Teams channels for project collaboration instead of group emails.\n- Schedule meetings directly from Teams with the Calendar tab.\n- Share files in Teams channels instead of email attachments for better collaboration.",
+      "keywords": ["teams", "microsoft teams", "video call", "meeting", "chat", "collaboration"],
+      "related_policy": null,
+      "priority": "low"
+    },
+    {
+      "id": "FAQ-019",
+      "category": "hardware",
+      "question": "How do I connect to a printer?",
+      "answer": "To connect to an office printer:\n\n**Windows:**\n1. Go to Settings > Devices > Printers & Scanners.\n2. Click 'Add a printer or scanner'.\n3. Select the network printer from the list, or click 'The printer I want isn't listed'.\n4. Enter the printer path: `\\\\printserver\\PRINTER-NAME` (check the label on the printer).\n\n**macOS:**\n1. System Preferences > Printers & Scanners > '+' button.\n2. Select the printer from the list.\n\n**Common Printers**:\n- Floor 1: `\\\\printserver\\FL1-COLOR-HP` (Color)\n- Floor 2: `\\\\printserver\\FL2-BW-XEROX` (B&W, fast)\n- Floor 3: `\\\\printserver\\FL3-COLOR-CANON` (Color)\n\n**Remote Printing**: Not available. Print to PDF and print when in office.",
+      "keywords": ["printer", "print", "connect printer", "printing", "scanner", "can't print"],
+      "related_policy": null,
+      "priority": "low"
+    },
+    {
+      "id": "FAQ-020",
+      "category": "security",
+      "question": "How do I encrypt my laptop/files?",
+      "answer": "Encryption is mandatory on all company devices:\n\n**Full Disk Encryption (Automatic)**:\n- **Windows**: BitLocker is enabled by default on all company laptops. Check: Settings > Privacy & Security > Device encryption.\n- **macOS**: FileVault is enabled by default. Check: System Preferences > Security & Privacy > FileVault.\n\n**File-Level Encryption**:\n- Use Microsoft 365 sensitivity labels to encrypt specific documents.\n- In Word/Excel: File > Info > Protect Document > Encrypt with Password.\n- For sharing: Use OneDrive/SharePoint with controlled access links.\n\n**USB Drives**: External USB drives must be encrypted using BitLocker To Go before storing company data.\n\n**If encryption is disabled**: Contact IT immediately — this is a compliance violation.",
+      "keywords": ["encrypt", "encryption", "bitlocker", "filevault", "security", "data protection"],
+      "related_policy": null,
+      "priority": "medium"
+    },
+    {
+      "id": "FAQ-021",
+      "category": "vpn",
+      "question": "Can I use split tunneling on VPN?",
+      "answer": "**Split tunneling policy**:\n\n- **Standard employees**: Full tunnel VPN is required. All traffic goes through the corporate network for security monitoring.\n- **Developers**: Split tunneling may be enabled upon request with manager and IT Security approval.\n- **To request split tunneling**: Submit a request at https://itportal.company.com/vpn-exception with business justification.\n\n**What split tunneling does**: Routes only corporate traffic through VPN, while personal browsing goes through your regular internet. This can improve performance for video calls.\n\n**Approval timeline**: 3-5 business days for security review.",
+      "keywords": ["split tunnel", "vpn slow", "bandwidth", "vpn performance", "vpn speed"],
+      "related_policy": "vpn_policy",
+      "priority": "low"
+    },
+    {
+      "id": "FAQ-022",
+      "category": "general",
+      "question": "How do I onboard a new team member's IT setup?",
+      "answer": "For new employee IT onboarding:\n\n1. **Manager submits**: IT onboarding request at https://itportal.company.com/onboarding (at least 5 days before start date).\n2. **IT provisions**:\n   - Corporate email account\n   - Active Directory account\n   - Laptop (standard config for role)\n   - Software licenses\n   - Building access card\n   - VPN access\n   - Group memberships per department\n3. **Day 1**: New employee collects equipment from IT Help Desk, Floor 2.\n4. **First Week**: Mandatory IT security training (online, ~30 minutes).\n\n**For contractors**: Different process — submit contractor access request with project end date.",
+      "keywords": ["new employee", "onboarding", "setup new user", "new hire", "provision", "new account"],
+      "related_policy": null,
+      "priority": "medium"
+    },
+    {
+      "id": "FAQ-023",
+      "category": "general",
+      "question": "How do I offboard a departing employee?",
+      "answer": "For employee offboarding:\n\n1. **Manager submits**: IT offboarding request at https://itportal.company.com/offboarding (at least 3 days before last day).\n2. **IT performs**:\n   - Disable Active Directory account (last day EOD)\n   - Revoke VPN access\n   - Remove from distribution groups\n   - Backup and archive email (30-day retention)\n   - Wipe mobile devices\n   - Collect hardware (laptop, badge, peripherals)\n   - Revoke software licenses\n3. **Data**: Manager receives access to departing employee's OneDrive files for 30 days.\n\n**Immediate termination**: Contact IT Security directly for emergency account disablement.",
+      "keywords": ["offboarding", "leaving", "departing", "deactivate", "remove access", "last day", "termination"],
+      "related_policy": null,
+      "priority": "medium"
+    },
+    {
+      "id": "FAQ-024",
+      "category": "network",
+      "question": "How do I request access to a shared drive or folder?",
+      "answer": "To request shared drive/folder access:\n\n1. **SharePoint/OneDrive**: Ask the folder owner to share with you, or request access by clicking 'Request Access' on the SharePoint site.\n2. **Network Drives**: Submit an access request at https://itportal.company.com/access-request.\n3. **Required Info**: Drive/folder path, business justification, manager approval.\n4. **Timeline**: 1-2 business days for standard requests.\n\n**Common shared drives**:\n- `\\\\fileserver\\departments\\[DEPT]` — Department files\n- `\\\\fileserver\\projects\\[PROJECT]` — Project files\n- `\\\\fileserver\\public` — Company-wide shared files\n\n**Best Practice**: Use SharePoint/OneDrive for new file sharing instead of network drives.",
+      "keywords": ["shared drive", "folder access", "permissions", "network drive", "sharepoint", "file share"],
+      "related_policy": null,
+      "priority": "medium"
+    },
+    {
+      "id": "FAQ-025",
+      "category": "password",
+      "question": "What is the password policy?",
+      "answer": "Company password policy requirements:\n\n- **Length**: Minimum 12 characters\n- **Complexity**: At least one uppercase, one lowercase, one number, one special character\n- **Expiration**: Passwords expire every 90 days\n- **History**: Cannot reuse last 12 passwords\n- **Lockout**: Account locks after 5 failed attempts (auto-unlocks after 30 minutes)\n- **MFA**: Multi-factor authentication required for all accounts\n\n**Best Practices**:\n- Use a passphrase instead of a password (e.g., 'Coffee-Mountain-Runs-42!')\n- Use the company-approved password manager (LastPass Enterprise)\n- Never share your password with anyone, including IT staff\n- Never use your corporate password for personal accounts",
+      "keywords": ["password policy", "password requirements", "password rules", "complexity", "expiration"],
+      "related_policy": "password_policy",
+      "priority": "medium"
+    }
+  ]
+}

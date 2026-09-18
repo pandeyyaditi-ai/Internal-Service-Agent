@@ -1,0 +1,58 @@
+CORPORATE VPN ACCESS POLICY
+Document ID: POL-NET-001
+Version: 2.5
+Effective Date: March 1, 2024
+Review Date: March 1, 2025
+
+1. PURPOSE
+This policy defines the requirements and guidelines for using the corporate Virtual Private Network (VPN) to access internal resources remotely.
+
+2. SCOPE
+All employees, contractors, and authorized third parties who require remote access to corporate network resources.
+
+3. AUTHORIZATION
+3.1 VPN access is granted to employees with active accounts and completed security training
+3.2 Contractor VPN access requires sponsor approval and is limited to contract duration
+3.3 Third-party access requires IT Security and management approval
+
+4. APPROVED VPN CLIENT
+4.1 GlobalProtect VPN client is the only approved VPN solution
+4.2 Download from: https://vpn.company.com
+4.3 Supported platforms: Windows 10+, macOS 12+, Ubuntu 20.04+, iOS 15+, Android 12+
+4.4 Auto-update must be enabled
+
+5. CONNECTION REQUIREMENTS
+5.1 Portal address: vpn.company.com
+5.2 Authentication: Corporate credentials + MFA
+5.3 Full tunnel mode is default for all standard users
+5.4 Split tunneling available upon request with IT Security approval
+
+6. ACCEPTABLE USE
+6.1 VPN must be connected when accessing any internal resource remotely
+6.2 VPN is for business purposes — personal use should be minimal
+6.3 Do not share VPN credentials or allow others to use your connection
+6.4 Disconnect VPN when not actively using corporate resources
+
+7. SECURITY REQUIREMENTS
+7.1 Device must have up-to-date antivirus (CrowdStrike)
+7.2 Operating system must be fully patched
+7.3 Device must have full disk encryption enabled
+7.4 Device must have a screen lock enabled
+7.5 Devices failing compliance checks will be denied VPN access
+
+8. TROUBLESHOOTING
+8.1 Restart VPN client before contacting support
+8.2 Verify internet connectivity
+8.3 Check credentials by logging into email first
+8.4 Common error codes and resolutions available in IT FAQ
+8.5 Contact IT Support for persistent issues
+
+9. SPLIT TUNNELING EXCEPTIONS
+9.1 Available for: Development teams, approved roles
+9.2 Request process: IT Portal > VPN Exception Request
+9.3 Requires: Manager approval + IT Security review
+9.4 Review period: 3-5 business days
+9.5 Exceptions are reviewed quarterly and may be revoked
+
+10. VIOLATIONS
+Unauthorized VPN usage, credential sharing, or policy violations may result in immediate access revocation and disciplinary action.
